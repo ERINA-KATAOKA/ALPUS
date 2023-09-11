@@ -1,0 +1,155 @@
+@use "global" as *;
+
+.p-service-body__items {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-service-body__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include mq("md") {
+		flex-direction: row-reverse;
+    align-items: start;
+    justify-content: space-between;
+  }
+}
+
+.p-service-body__item:nth-of-type(3n-1) {
+  @include mq("md") {
+		flex-direction: row;
+  }
+}
+
+.p-service-body__item:not(:first-child) {
+  margin-top: rem(48);
+
+  @include mq("md") {
+		margin-top: rem(104);
+  }
+}
+
+.p-service-body__content {
+  display: contents;
+
+  @include mq("md") {
+		display: block;
+    width: 49.5868%;
+    margin-right: rem(20);
+  }
+}
+
+.p-service-body__item:nth-of-type(3n-1) .p-service-body__content {
+  @include mq("md") {
+		margin-right: 0;
+    margin-left: rem(64);
+  }
+}
+
+.p-service-body__title {
+  position: relative;
+  display: inline-block;
+  padding-top: rem(72);
+}
+
+.p-service-body__title::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  width: rem(1);
+  height: rem(56);
+  background-color: $white;
+}
+
+.p-service-body__title::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  transform: translateX(rem(-144));
+  width: rem(248);
+  height: rem(1);
+  background-color: $white;
+}
+
+.p-service-body__title h2 {
+  font-size: rem(18);
+  font-weight: $normal;
+  line-height: calc(32 / 18);
+  letter-spacing: 0.08em;
+
+  @include mq("md") {
+    font-size: rem(24);
+    line-height: calc(32 / 24);
+  }
+}
+
+.p-service-body__text {
+  margin-top: rem(24);
+  order: 3;
+
+  @include mq("md") {
+		margin-top: rem(48);
+  }
+}
+
+.p-service-body__text p {
+  font-size: rem(14);
+  font-weight: $normal;
+  line-height: calc(32 / 14);
+  letter-spacing: 0.08em;
+  text-align: justify;
+}
+
+.p-service-body__img {
+  margin-top: rem(24);
+  width: 63.6086%;
+
+  @include mq("md") {
+    margin-top: 0;
+		max-width: rem(352);
+    width: 36.36363%;
+  }
+}
+
+.p-service-body__item:nth-of-type(3n-1) .p-service-body__img {
+
+  @include mq("md") {
+    position: relative;
+		max-width: rem(328);
+    z-index: 0;
+  }
+}
+
+.p-service-body__item:nth-of-type(3n-1) .p-service-body__img::before {
+  position: absolute;
+  content: "";
+  top: rem(-88);
+  left: rem(-164);
+  width: rem(208);
+  height: rem(168);
+  background-image: url(../images/common/page-service-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.p-service-body__img img {
+  aspect-ratio: 208 / 260;
+  object-fit: cover;
+
+  @include mq("md") {
+		aspect-ratio: 352 / 440;
+  }
+}
+
+.p-service-body__item:nth-of-type(3n-1) .p-service-body__img img {
+
+  @include mq("md") {
+		aspect-ratio: 328 / 352;
+  }
+}

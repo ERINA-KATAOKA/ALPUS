@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.p-gallery__heading {
+  text-align: center;
+}
+
+.p-gallery__swiper {
+  margin: rem(48) calc(50% - 50vw) 0;
+
+  @include mq("md") {
+		margin-top: rem(72);
+  }
+}
+
+.p-gallery__swiper-wrapper {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.p-gallery__swiper-slide {
+  width: rem(400);
+}
+
+.p-gallery__swiper-slide img {
+  aspect-ratio: 400 /280;
+  object-fit: cover;
+}
+

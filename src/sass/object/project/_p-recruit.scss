@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.p-recruit__inner.l-inner {
+  max-width: rem(600);
+  padding: 0 rem(40);
+
+  @include mq("md") {
+    max-width: rem(1083);
+    padding: 0 rem(25);
+  }
+}
+
+.p-recruit__body {
+  position: relative;
+}
+
+.p-recruit__img {
+  max-width: rem(677);
+  padding-bottom: rem(68);
+  @include mq("md") {
+		padding-bottom: rem(24);
+  }
+}
+
+.p-recruit__img img {
+  aspect-ratio: 296 / 164;
+  object-fit: cover;
+
+  @include mq("md") {
+	aspect-ratio: 677 / 376;
+  }
+}
+
+.p-recruit__link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+

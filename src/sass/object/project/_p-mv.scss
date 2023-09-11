@@ -1,0 +1,65 @@
+@use "global" as *;
+
+.p-mv {
+  width: 100%;
+  height: 100vh;
+}
+
+.p-mv__inner {
+  position: relative;
+  width: 100%;
+  height: inherit;
+  z-index: 100;
+}
+
+.p-mv__swiper {
+  height: inherit;
+}
+
+.p-mv__swiper-wrapper,
+.p-mv__swiper-slide,
+.p-mv__swiper-slide,
+.p-mv__swiper-img,
+.p-mv__swiper-img img {
+  height: inherit;
+  object-fit: cover;
+}
+
+.p-mv__swiper-img img {
+  aspect-ratio: 1282 / 866;
+}
+
+// .p-mv__swiper-img::after {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: rgba(211, 211, 211, .5);
+// }
+
+.p-mv__title-wrapper {
+  position: absolute;
+  top: 51%;
+  left: 5.33333%;
+  transform: translateY(-50%);
+  z-index: 200;
+  
+  @include mq("md") {
+    top: 45%;
+    left: 10.625%;
+  }
+}
+
+.p-mv__title {
+  font-size: rem(24);
+  font-weight: $normal;
+  line-height: calc(38 / 24);
+  letter-spacing: 0.08em;
+  
+  @include mq("md") {
+		font-size: rem(40);
+    line-height: calc(64 / 40);
+  }
+}

@@ -1,0 +1,49 @@
+@use "global" as *;
+
+.c-section-heading__sub {
+  font-size: rem(18);
+  font-weight: $normal;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  @include mq("md") {
+    font-size: rem(24);
+  }
+}
+
+.c-section-heading__title {
+  font-size: rem(16);
+  font-weight: $normal;
+  letter-spacing: 0.08em;
+}
+
+.c-section-heading.c-section-heading--gallery .c-section-heading__title {
+  margin-top: rem(17);
+
+  @include mq("md") {
+		margin-top: rem(8);
+  }
+}
+
+.c-section-heading.c-section-heading--recruit {
+  display: inline-block;
+  padding: rem(16) rem(72);
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 rem(4) rem(4) rgba($color: $white, $alpha: 0.56);
+  transition: all .1s ease-in;
+
+  @include mq("md") {
+		padding: rem(34) rem(148);
+  }
+}
+
+.c-section-heading.c-section-heading--recruit:hover {
+  transform: translateY(rem(4));
+  box-shadow: none;
+}
+
+.c-section-heading.c-section-heading--recruit .c-section-heading__sub,
+.c-section-heading.c-section-heading--recruit .c-section-heading__title {
+  color: $gray03;
+}

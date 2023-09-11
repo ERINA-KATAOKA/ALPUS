@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.c-service-card {
+  padding: rem(32) rem(16);
+  border: rem(1) solid $white;
+}
+
+.c-service-card__title {
+  font-size: rem(16);
+  font-weight: $normal;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+.c-service-card__img {
+  display: block;
+  margin-top: rem(30);
+}
+
+.c-service-card__img source,
+.c-service-card__img img {
+  aspect-ratio: 264 / 160;
+  object-fit: cover;
+}

@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.c-parallax {
+  position: relative;
+  width: 100%;
+  height: rem(104);
+  overflow: hidden;
+
+  @include mq("md") {
+    height: rem(332);
+  }
+}

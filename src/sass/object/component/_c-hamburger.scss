@@ -1,0 +1,94 @@
+@use "global" as *;
+
+.c-hamburger {
+  position: fixed;
+  top: rem(29);
+  right: rem(24);
+  width: rem(20);
+  height: rem(13);
+  z-index: 9999;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.c-hamburger span {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  height: rem(1);
+  background-color: $white;
+  transition: all .3s;
+}
+
+.c-hamburger span:nth-child(1) {
+  width: 100%;
+  top: 0;
+}
+
+.c-hamburger span:nth-child(2) {
+  width: rem(16);
+  top: rem(6);
+  transition: opacity .3s;
+}
+
+.c-hamburger span:nth-child(3) {
+  width: rem(16);
+  bottom: 0;
+}
+
+.c-hamburger.is-active {
+  top: rem(40);
+  right: rem(40);
+  width: rem(28);
+}
+
+.c-hamburger.is-active span:nth-child(1) {
+  width: 100%;
+  top: rem(6);
+  transform: rotate(45deg);
+}
+
+.c-hamburger.is-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.c-hamburger.is-active span:nth-child(3) {
+  width: 100%;
+  bottom: rem(6);
+  transform: rotate(-45deg);
+}
+
+
+
+
+
+
+
+// .hamburger span:nth-child(1) {
+//   top: 0;
+// }
+
+// .hamburger span:nth-child(2) {
+//   top: rem();
+// }
+
+// .hamburger span:nth-child(3) {
+//   bottom: 0;
+// }
+
+// .hamburger.is-active {
+//   right: rem();
+//   width: rem();
+// }
+
+// .hamburger.is-active span:nth-child(1) {
+//   transform: translateY(rem()) rotate(45deg);
+// }
+
+// .hamburger.is-active span:nth-child(2) {
+// opacity: 0;
+// }
+
+// .hamburger.is-active span:nth-child(3) {
+//   transform: translateY(rem(-)) rotate(-45deg);
+// }

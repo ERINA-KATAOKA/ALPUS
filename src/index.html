@@ -6,7 +6,7 @@
   <meta name="format-detection" content="telephone=no" />
   <meta name="robots" content="noindex" />
   <!-- meta情報 -->
-  <title>CodeUps</title>
+  <title>ALPUS</title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <!-- ogp -->
@@ -16,25 +16,364 @@
   <meta property="og:image" content="" />
   <meta property="og:site_name" content="" />
   <meta property="og:description" content="" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
   <!-- ファビコン -->
   <link rel="icon" href="#" />
   <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
-<body>
+<body class="p-fade-in js-fade-in">
   <header>
-
+    <div class="p-header js-header">
+      <div class="p-header__inner">
+        <h1 class="p-header__name">
+          <a href="#" class="p-header__logo">
+            <img src="./assets/images/common/logo.svg" alt="ALPUS">
+          </a>
+        </h1>
+        <div class="p-header__nav-content">
+          <nav class="p-header__pc-nav u-desktop">
+            <ul class="p-header__nav-items">
+              <li class="p-header__nav-item">
+                <a class="p-header__nav-link" href="#about">私たちについて</a>
+              </li>
+              <li class="p-header__nav-item">
+                <a class="p-header__nav-link" href="#service">サービス</a>
+              </li>
+              <li class="p-header__nav-item">
+                <a class="p-header__nav-link" href="#news">ニュース</a>
+              </li>
+              <li class="p-header__nav-item">
+                <a class="p-header__nav-link" href="#gallery">ギャラリー</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="p-header__buttton-content">
+            <div class="p-header__button">
+              <a class="c-button c-button--nav" href="page-recruit.html">採用情報</a>
+            </div>
+            <div class="p-header__button">
+              <a class="c-button c-button--nav" href="page-contact.html">お問い合わせ</a>
+            </div>
+          </div>
+        </div>
+        <!-- hamburger -->
+        <div class="p-header__hamburger c-hamburger js-hamburger u-mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <!-- drawer -->
+      <div class="p-header__sp-nav p-drawer js-drawer">
+        <div class="p-drawer__inner">
+          <div class="p-drawer__nav-content">
+            <nav class="p-drawer__nav">
+              <ul class="p-drawer__nav-items">
+                <li class="p-drawer__nav-item">
+                  <a href="#about" class="p-drawer__nav-link">私たちについて</a>
+                </li>
+                <li class="p-drawer__nav-item">
+                  <a href="#service" class="p-drawer__nav-link">サービス</a>
+                </li>
+                <li class="p-drawer__nav-item">
+                  <a href="#news" class="p-drawer__nav-link">ニュース</a>
+                </li>
+                <li class="p-drawer__nav-item">
+                  <a href="#gallery" class="p-drawer__nav-link">ギャラリー</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="p-drawer__buttton">
+              <ul class="p-drawer__button-items">
+                <li class="p-drawer__button-item">
+                  <a class="c-button c-button--drawer" href="page-recruit.html">採用情報</a>
+                </li>
+                <li class="p-drawer__button-item">
+                  <a class="c-button c-button--drawer" href="page-contact.html">お問い合わせ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
   <main>
-    <div class="l-inner">
-      <p class="test">変更のテスト</p>
+    <!-- mv -->
+    <section id="mv" class="p-mv l-mv">
+      <div class="p-mv__inner">
+        <div class="p-mv__swiper swiper js-mv-swiper">
+          <div class="p-mv__swiper-wrapper swiper-wrapper">
+            <div class="p-mv__swiper-slide swiper-slide">
+              <div class="p-mv__swiper-img">
+                <img src="./assets/images/common/mv-01.jpg" alt="ハイクオリティなリビングの様子"/>
+              </div>
+            </div>
+            <div class="p-mv__swiper-slide swiper-slide">
+              <div class="p-mv__swiper-img">
+                <img src="./assets/images/common/mv-02.jpg" alt="ハイクオリティなリビングの様子"/>
+              </div>
+            </div>
+            <div class="p-mv__swiper-slide swiper-slide">
+              <div class="p-mv__swiper-img">
+                <img src="./assets/images/common/mv-03.jpg" alt="ハイクオリティなリビングの様子"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-mv__title-wrapper">
+          <h2 class="p-mv__title">ハイクオリティの空間を<br>あなたに</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="p-about l-about">
+      <div class="p-about__inner l-inner">
+        <div class="p-about__heading c-section-heading">
+          <p class="c-section-heading__sub">about&nbsp;us</p>
+          <h3 class="c-section-heading__title">私たちについて</h3>
+        </div>
+        <div class="p-about__body">
+          <div class="p-about__img">
+            <img src="./assets/images/common/about-01.jpg" alt="おしゃれなおうちの玄関の様子">
+          </div>
+          <div class="p-about__content">
+            <div class="p-about__text-wrap">
+              <p class="p-about__title">あなたの人生に寄り添う家を<br>他にはない、高いクオリティでお届けします</p>
+              <p class="p-about__text">理想の区間を形にし、快適さと美しさを融合させた豪華な住環境をご提案します。<br>一流の建築家とデザイナーがあなたの要望をくみ取り、独創的なアイディアと最新技術を駆使して、唯一無二の住まいを実現いたします。</p>
+            </div>
+            <div class="p-about__button">
+              <a class="c-button" href="page-about.html">more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- parallax -->
+    <div class="c-parallax l-parallax js-parallax">
+      <div class="c-parallax__img">
+        <img src="./assets/images/common/parallax.jpg" alt="煉瓦造りの大きな家の外観">
+      </div>
     </div>
+
+    <!-- service -->
+    <section id="service" class="p-service l-service">
+      <div class="p-service__inner l-inner">
+        <div class="p-service__heading c-section-heading">
+          <p class="c-section-heading__sub">service</p>
+          <h3 class="c-section-heading__title">サービス</h3>
+        </div>
+        <div class="p-service__body">
+          <ul class="p-service__cards">
+            <li class="p-service__card">
+              <div class="c-service-card">
+                <h4 class="c-service-card__title">オーダーメイド</h4>
+                <picture class="c-service-card__img">
+                  <source srcset="./assets/images/common/service-sp-01.jpg" media="(max-width: 767px)"/>
+                  <img src="./assets/images/common/service-01.jpg" alt="オーダーメイドのおうちの様子"/>
+                </picture>
+              </div>
+            </li>
+            <li class="p-service__card">
+              <div class="c-service-card">
+                <h4 class="c-service-card__title">コーディネート</h4>
+                <picture class="c-service-card__img">
+                  <source srcset="./assets/images/common/service-sp-02.jpg" media="(max-width: 767px)"/>
+                  <img src="./assets/images/common/service-02.jpg" alt="コーディネートされたリビングの様子"/>
+                </picture>
+              </div>
+            </li>
+            <li class="p-service__card">
+              <div class="c-service-card">
+                <h4 class="c-service-card__title">ライフプランニング</h4>
+                <picture class="c-service-card__img">
+                  <source srcset="./assets/images/common/service-sp-03.jpg" media="(max-width: 767px)"/>
+                  <img src="./assets/images/common/service-03.jpg" alt="ライフプランを考えている様子"/>
+                </picture>
+              </div>
+            </li>
+          </ul>
+          <div class="p-service__button">
+            <a class="c-button" href="page-service.html">more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- news -->
+    <section id="news" class="p-news l-news">
+      <div class="p-news__inner l-inner">
+        <div class="p-news__heading c-section-heading">
+          <p class="c-section-heading__sub">news</p>
+          <h3 class="c-section-heading__title">ニュース</h3>
+        </div>
+        <div class="p-news__body">
+          <ul class="p-news__items">
+            <li class="p-news__item">
+              <div class="p-news__meta">
+                <time class="news-item__date" datetime="2023-06-12">2023/06/12</time>
+                <p class="p-news__text">メンバーシッププログラム開始のおしらせ</p>
+              </div>
+            </li>
+            <li class="p-news__item">
+              <div class="p-news__meta">
+                <time class="news-item__date" datetime="2023-05-14">2023/05/14</time>
+                <p class="p-news__text">人材セミナーの開催について</p>
+              </div>
+            </li>
+            <li class="p-news__item">
+              <div class="p-news__meta">
+                <time class="news-item__date" datetime="2023-04-14">2023/04/14</time>
+                <p class="p-news__text">新社員採用について</p>
+              </div>
+            </li>
+          </ul>
+          <div class="p-news__button">
+            <a class="c-button" href="page-news.html">more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery -->
+    <section id="gallery" class="p-gallery l-gallery">
+      <div class="p-gallery__inner l-inner">
+        <div class="p-gallery__heading c-section-heading c-section-heading--gallery">
+          <p class="c-section-heading__sub">design&nbsp;room&nbsp;gallery</p>
+          <h3 class="c-section-heading__title">デザインルームギャラリー</h3>
+        </div>
+        <div class="p-gallery__body">
+          <div class="p-gallery__swiper swiper js-gallery-swiper">
+            <div class="p-gallery__swiper-wrapper swiper-wrapper">
+              <div class="p-gallery__swiper-slide swiper-slide">
+                <img src="./assets/images/common/gallery-01.jpg" alt="">
+              </div>
+              <div class="p-gallery__swiper-slide swiper-slide">
+                <img src="./assets/images/common/gallery-02.jpg" alt="">
+              </div>
+              <div class="p-gallery__swiper-slide swiper-slide">
+                <img src="./assets/images/common/gallery-03.jpg" alt="">
+              </div>
+              <div class="p-gallery__swiper-slide swiper-slide">
+                <img src="./assets/images/common/gallery-04.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- recruit -->
+    <section id="recruit" class="p-recruit l-recruit">
+      <div class="p-recruit__inner l-inner">
+        <div class="p-recruit__body">
+          <div class="p-recruit__img">
+            <img src="./assets/images/common/recruit-01.jpg" alt="">
+          </div>
+          <div class="p-recruit__link">
+            <a class="p-recruit__heading c-section-heading c-section-heading--recruit" href="page-recruit.html">
+              <p class="c-section-heading__sub">recruit</p>
+              <h3 class="c-section-heading__title">採用情報</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="p-contact l-contact">
+      <a class="p-contact__inner l-inner" href="page-contact.html">
+        <div class="p-contact__heading">
+          <p class="p-contact__sub">contact&nbsp;us</p>
+          <h3 class="p-contact__title">お気軽にご相談ください。</h3>
+        </div>
+      </a>
+    </section>
   </main>
   <footer>
-
+    <div class="p-footer l-footer">
+      <div class="p-footer__inner l-inner">
+        <div class="p-footer__content">
+          <div class="p-footer__wrapper-top">
+            <div class="p-footer__nav">
+              <ul class="p-footer__nav-items">
+                <li class="p-footer__nav-item">
+                  <a class="p-footer__link" href="#about">私たちについて</a>
+                </li>
+                <li class="p-footer__nav-item">
+                  <a class="p-footer__link" href="#service">サービス</a>
+                </li>
+                <li class="p-footer__nav-item">
+                  <a class="p-footer__link" href="#news">ニュース</a>
+                </li>
+                <li class="p-footer__nav-item">
+                  <a class="p-footer__link" href="#gallery">ギャラリー</a>
+                </li>
+              </ul>
+            </div>
+            <div class="p-footer__button">
+              <ul class="p-footer__button-items">
+                <li class="p-footer__button-item">
+                  <a class="c-button c-button--nav" href="page-recruit.html">採用情報</a>
+                </li>
+                <li class="p-footer__button-item">
+                  <a class="c-button c-button--nav" href="page-contact.html">お問い合わせ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-footer__wrapper-bottom">
+            <div class="p-footer__name">
+              <div class="p-footer__title">
+                <p>aplus</p>
+              </div>
+              <div class="p-footer__logo">
+                <img class="p-footer__logo-img" src="./assets/images/common/logo.svg" alt="APLUS">
+              </div>
+            </div>
+            <div class="p-footer__add">
+              <ul class="p-footer__add-list">
+                <li class="p-footer__add-item">
+                  <p>株式会社APLUS</p>
+                </li>
+                <li class="p-footer__add-item">
+                  <p>〒105-0004</p>
+                </li>
+                <li class="p-footer__add-item">
+                  <p>東京都千代田区神田</p>
+                </li>
+                <li class="p-footer__add-item">
+                  <p>9:00AM—6:00PM （水曜日定休）</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-footer__page-top u-desktop js-page-top">
+            <div class="page-top__wrap">
+              <a href="#top" class="page-top__link">
+                <span>page&nbsp;top</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-footer__copyright">
+        <p>Copyright&thinsp;&copy;&thinsp;A&thinsp;PLUS&thinsp;All&thinsp;Rights&thinsp;Reserved.</p>
+      </div>
+    </div>
   </footer>
 </body>
 

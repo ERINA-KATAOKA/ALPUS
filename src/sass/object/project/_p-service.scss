@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.p-service__inner.l-inner {
+  max-width: rem(600);
+  padding: 0 rem(40);
+
+  @include mq("md") {
+		max-width: rem(1020);
+    padding: 0 rem(25);
+  }
+}
+
+.p-service__heading {
+  text-align: center;
+}
+
+.p-service__body {
+  margin-top: rem(32);
+
+  @include mq("md") {
+		margin-top: rem(72);
+  }
+}
+
+.p-service__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(32);
+  
+  @include mq("md") {
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(40);
+  }
+}
+
+.p-service__button {
+  margin-top: rem(48);
+  text-align: center;
+
+  @include mq("md") {
+		margin-top: rem(72);
+  }
+}

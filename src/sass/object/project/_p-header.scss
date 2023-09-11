@@ -1,0 +1,85 @@
+@use "global" as *;
+
+.p-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: rem(72);
+  background-color: rgba($color: $gray01, $alpha: 0.3);
+  z-index: 1000;
+
+  @include mq("md") {
+		height: rem(100);
+  }
+}
+
+.p-header__inner {
+  width: 100%;
+  height: inherit;
+  padding-right: rem(67);
+  padding-left: rem(24);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include mq("md") {
+		padding-right: rem(24);
+  }
+
+  @media screen and (min-width:1240px) {
+		padding-right: min((145 / 1280)*100vw,rem(145));
+    padding-left: min((145 / 1280)*100vw,rem(145));
+  }
+}
+
+.p-header__name {
+  max-width: rem(48);
+  width: 100%;
+
+  @include mq("md") {
+		max-width: rem(80);
+  }
+}
+
+.p-header__nav-content {
+  height: inherit;
+  display: flex;
+  
+  @include mq("md") {
+    gap: min((56 / 1280)*100vw,rem(56));
+  }
+}
+
+.p-header__pc-nav {
+  height: inherit;
+}
+
+.p-header__nav-items {
+  width: 100%;
+  height: inherit;
+  display: flex;
+}
+
+.p-header__nav-item {
+  height: inherit;
+}
+
+.p-header__nav-link {
+  height: inherit;
+  padding: 0 min((16 / 1280)*100vw,rem(16));
+  display: flex;
+  align-items: center;
+}
+
+.p-header__buttton-content {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  flex-shrink: 1;
+  gap: rem(16);
+
+  @include mq("md") {
+    gap: rem(24);
+  }
+}

@@ -1,0 +1,66 @@
+@use "global" as *;
+.c-page-top {
+  position: relative;
+}
+
+.c-page-top.c-page-top--fixed {
+  position: fixed;
+  bottom: 20%;
+  right: rem(8);
+  z-index: 100;
+  opacity: 0;
+  transition: opacity .3s;
+  
+  @include mq("md") {
+    right: rem(24);
+  }
+}
+
+.c-page-top.c-page-top--fixed.is-active {
+  opacity: 1;
+}
+
+.c-page-top.c-page-top--fixed.is-none {
+  opacity: 0;
+}
+
+.c-page-top__wrap {
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.c-page-top__link {
+  position: relative;
+  display: inline-block;
+  padding: rem(64) 0 rem(32);
+  border-left: rem(1) solid $white;
+  transition: transform .3s;
+}
+
+.c-page-top__link:hover {
+  transform: translateY(rem(-16));
+}
+
+.c-page-top__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: rem(38);
+  height: rem(1);
+  background-color: $white;
+  transform: rotate(68.2deg);
+  transform-origin: left top;
+}
+
+.c-page-top__link span {
+  font-size: rem(10);
+  font-weight: $normal;
+  line-height: 3;
+  letter-spacing: 0.08em;
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+  transform: scale(.8);
+}

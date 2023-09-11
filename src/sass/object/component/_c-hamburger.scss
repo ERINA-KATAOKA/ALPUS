@@ -9,6 +9,16 @@
   z-index: 9999;
   cursor: pointer;
   transition: all .3s;
+  display: block;
+
+  @include mq("md") {
+		transform: scale(1.5);
+    transform-origin: top right;
+  }
+
+  @include mq("lg") {
+		display: none;
+  }
 }
 
 .c-hamburger span {

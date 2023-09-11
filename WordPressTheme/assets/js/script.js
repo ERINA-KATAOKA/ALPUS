@@ -54,19 +54,11 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
-
   // ハンバーガーメニュー
   $(".js-hamburger,.js-drawer").click(function () {
     $(".js-hamburger").toggleClass("is-active");
     $(".js-drawer").fadeToggle();
   });
-
-  // ヘッダーの高さ分だけコンテンツを下げる
-  // $(function () {
-  //   var height = $(".js-header").height();
-  //   $("main").css("margin-top", height);
-  // });
-
   $(document).ready(function () {
     // ヘッダーの高さ取得
     var headerHeight = $(".js-header").height();
@@ -76,7 +68,7 @@ jQuery(function ($) {
       var href = $(this).attr("href");
       var target = $(href == "#" || href == "" ? "html" : href);
       // ヘッダーの高さ分下げる
-      var position = target.offset().top - headerHeight;
+      var position = target.offset().top - headerHeight - 20;
       // ページ内スクロールアニメーション
       $("body,html").animate({
         scrollTop: position
@@ -89,10 +81,46 @@ jQuery(function ($) {
     // ページ読み込み時にURLのアンカーがある場合の処理
     var hash = window.location.hash;
     if (hash && $(hash).length) {
-      var position = $(hash).offset().top - headerHeight;
+      var position = $(hash).offset().top - headerHeight - 20;
       $("body,html").animate({
         scrollTop: position
       }, 700, "swing");
     }
+  });
+
+  //  ページトップボタン
+  $(function () {
+    // 変数にクラスを入れる
+    var btn = $('.js-page-top');
+
+    //スクロールしてページトップから100に達したらボタンを表示
+    $(window).on('load scroll', function () {
+      if ($(this).scrollTop() > 100) {
+        btn.addClass('is-active');
+      } else {
+        btn.removeClass('is-active');
+      }
+    });
+
+    //フッターの手前でボタンを止める
+    $(window).on('load scroll', function () {
+      var height = $(document).height(),
+        //ドキュメントの高さ
+        position = window.innerHeight + $(window).scrollTop(),
+        //ページトップから現在地までの高さ
+        footer = $('footer').height(); //フッターの高さ
+      if (height - position < footer) {
+        btn.addClass('is-none');
+      } else {
+        btn.removeClass('is-none');
+      }
+    });
+
+    //スクロールしてトップへ戻る
+    btn.on('click', function () {
+      $('body,html').animate({
+        scrollTop: 0
+      });
+    });
   });
 });

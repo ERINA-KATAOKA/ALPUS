@@ -184,48 +184,6 @@
 
 .p-footer__page-top {
   grid-area: top;
-  position: relative;
-}
-
-.page-top__wrap {
-  position: absolute;
-  top: 65%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-}
-
-.page-top__link {
-  position: relative;
-  display: inline-block;
-  padding: rem(64) 0 rem(32);
-  border-left: rem(1) solid $white;
-  transition: transform .3s;
-}
-
-.page-top__link:hover {
-  transform: translateY(rem(-16));
-}
-
-.page-top__link::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: rem(38);
-  height: rem(1);
-  background-color: $white;
-  transform: rotate(68.2deg);
-  transform-origin: left top;
-}
-
-.page-top__link span {
-  font-size: rem(10);
-  font-weight: $normal;
-  line-height: 3;
-  letter-spacing: 0.08em;
-  writing-mode: vertical-rl;
-  text-transform: uppercase;
-  transform: scale(.8);
 }
 
 .p-footer__copyright {

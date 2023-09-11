@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.l-about-body {
+  margin-top: rem(72);
+
+  @include mq("md") {
+		margin-top: rem(86);
+  }
+}

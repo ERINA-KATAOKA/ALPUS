@@ -6,7 +6,7 @@
 .c-page-top.c-page-top--fixed {
   position: fixed;
   bottom: 20%;
-  right: rem(8);
+  right: rem(12);
   z-index: 100;
   opacity: 0;
   transition: opacity .3s;
@@ -58,7 +58,7 @@
 .c-page-top__link span {
   font-size: rem(10);
   font-weight: $normal;
-  line-height: 3;
+  line-height: 2;
   letter-spacing: 0.08em;
   writing-mode: vertical-rl;
   text-transform: uppercase;

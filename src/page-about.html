@@ -36,11 +36,11 @@
   <header>
     <div class="p-header js-header">
       <div class="p-header__inner">
-        <h1 class="p-header__name">
-          <a href="#" class="p-header__logo">
+        <div class="p-header__name">
+          <a href="index.html" class="p-header__logo">
             <img src="./assets/images/common/logo.svg" alt="ALPUS">
           </a>
-        </h1>
+        </div>
         <div class="p-header__nav-content">
           <nav class="p-header__pc-nav">
             <ul class="p-header__nav-items">
@@ -110,186 +110,65 @@
     </div>
   </header>
   <main>
-    <!-- mv -->
-    <section class="p-mv">
-      <div class="p-mv__inner">
-        <div class="p-mv__swiper swiper js-mv-swiper">
-          <div class="p-mv__swiper-wrapper swiper-wrapper">
-            <div class="p-mv__swiper-slide swiper-slide">
-              <div class="p-mv__swiper-img">
-                <img src="./assets/images/common/mv-01.jpg" alt="ハイクオリティなリビングの様子"/>
-              </div>
-            </div>
-            <div class="p-mv__swiper-slide swiper-slide">
-              <div class="p-mv__swiper-img">
-                <img src="./assets/images/common/mv-02.jpg" alt="ハイクオリティなリビングの様子"/>
-              </div>
-            </div>
-            <div class="p-mv__swiper-slide swiper-slide">
-              <div class="p-mv__swiper-img">
-                <img src="./assets/images/common/mv-03.jpg" alt="ハイクオリティなリビングの様子"/>
-              </div>
-            </div>
-          </div>
+    <!-- ページタイトル -->
+    <div class="c-page-mv">
+      <div class="c-page-mv__inner">
+        <picture class="c-page-mv__img">
+          <source srcset="./assets/images/common/page-mv-sp-about.jpg" media="(max-width: 767px)"/>
+          <img src="./assets/images/common/page-mv-about.jpg" alt=""/>
+        </picture>
+        <div class="c-page-mv__title-wrap">
+          <p class="c-page-mv__sub">about&nbsp;us</p>
+          <h1 class="c-page-mv__main">私たちについて</h1>
         </div>
-        <div class="p-mv__title-wrapper">
-          <h2 class="p-mv__title">ハイクオリティの空間を<br>あなたに</h2>
-        </div>
-      </div>
-    </section>
-
-    <!-- about -->
-    <section id="about" class="p-about l-about">
-      <div class="p-about__inner l-inner">
-        <div class="p-about__heading c-section-heading">
-          <p class="c-section-heading__sub">about&nbsp;us</p>
-          <h3 class="c-section-heading__title">私たちについて</h3>
-        </div>
-        <div class="p-about__body">
-          <div class="p-about__img">
-            <img src="./assets/images/common/about-01.jpg" alt="おしゃれなおうちの玄関の様子">
-          </div>
-          <div class="p-about__content">
-            <div class="p-about__text-wrap">
-              <p class="p-about__title">あなたの人生に寄り添う家を<br>他にはない、高いクオリティでお届けします</p>
-              <p class="p-about__text">理想の区間を形にし、快適さと美しさを融合させた豪華な住環境をご提案します。<br>一流の建築家とデザイナーがあなたの要望をくみ取り、独創的なアイディアと最新技術を駆使して、唯一無二の住まいを実現いたします。</p>
-            </div>
-            <div class="p-about__button">
-              <a class="c-button" href="page-about.html">more</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- parallax -->
-    <div class="c-parallax l-parallax js-parallax">
-      <div class="c-parallax__img">
-        <img src="./assets/images/common/parallax.jpg" alt="煉瓦造りの大きな家の外観">
       </div>
     </div>
 
-    <!-- service -->
-    <section id="service" class="p-service l-service">
-      <div class="p-service__inner l-inner">
-        <div class="p-service__heading c-section-heading">
-          <p class="c-section-heading__sub">service</p>
-          <h3 class="c-section-heading__title">サービス</h3>
+    <!-- discription -->
+    <div class="p-about-discription l-page-about">
+      <div class="p-about-discription__inner l-inner">
+        <div class="p-about-discription__title">
+          <p>あなたの人生に寄り添う家を<br>他にはない、高いクオリティでお届けします</p>
         </div>
-        <div class="p-service__body">
-          <ul class="p-service__cards">
-            <li class="p-service__card">
-              <div class="c-service-card">
-                <h4 class="c-service-card__title">オーダーメイド</h4>
-                <picture class="c-service-card__img">
-                  <source srcset="./assets/images/common/service-sp-01.jpg" media="(max-width: 767px)"/>
-                  <img src="./assets/images/common/service-01.jpg" alt="オーダーメイドのおうちの様子"/>
-                </picture>
-              </div>
-            </li>
-            <li class="p-service__card">
-              <div class="c-service-card">
-                <h4 class="c-service-card__title">コーディネート</h4>
-                <picture class="c-service-card__img">
-                  <source srcset="./assets/images/common/service-sp-02.jpg" media="(max-width: 767px)"/>
-                  <img src="./assets/images/common/service-02.jpg" alt="コーディネートされたリビングの様子"/>
-                </picture>
-              </div>
-            </li>
-            <li class="p-service__card">
-              <div class="c-service-card">
-                <h4 class="c-service-card__title">ライフプランニング</h4>
-                <picture class="c-service-card__img">
-                  <source srcset="./assets/images/common/service-sp-03.jpg" media="(max-width: 767px)"/>
-                  <img src="./assets/images/common/service-03.jpg" alt="ライフプランを考えている様子"/>
-                </picture>
-              </div>
-            </li>
-          </ul>
-          <div class="p-service__button">
-            <a class="c-button" href="page-service.html">more</a>
-          </div>
+        <div class="p-about-discription__text">
+          <p>理想の区間を形にし、快適さと美しさを融合させた豪華な住環境をご提案します。<br>一流の建築家とデザイナーがあなたの要望をくみ取り、独創的なアイディアと最新技術を駆使して、唯一無二の住まいを実現いたします。</p>
+          <p>私たちは常にトレンドや最新のデザインを取り入れています。自然光の取り入れや風通しの良さを考慮した設計や、個々のスペースに合わせたカスタム家具の製作など、細部にまでわたるカスタマイズが可能です。</p>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- news -->
-    <section id="news" class="p-news l-news">
-      <div class="p-news__inner l-inner">
-        <div class="p-news__heading c-section-heading">
-          <p class="c-section-heading__sub">news</p>
-          <h3 class="c-section-heading__title">ニュース</h3>
-        </div>
-        <div class="p-news__body">
-          <ul class="p-news__items">
-            <li class="p-news__item">
-              <div class="p-news__meta">
-                <time class="news-item__date" datetime="2023-06-12">2023/06/12</time>
-                <p class="p-news__text">メンバーシッププログラム開始のおしらせ</p>
-              </div>
-            </li>
-            <li class="p-news__item">
-              <div class="p-news__meta">
-                <time class="news-item__date" datetime="2023-05-14">2023/05/14</time>
-                <p class="p-news__text">人材セミナーの開催について</p>
-              </div>
-            </li>
-            <li class="p-news__item">
-              <div class="p-news__meta">
-                <time class="news-item__date" datetime="2023-04-14">2023/04/14</time>
-                <p class="p-news__text">新社員採用について</p>
-              </div>
-            </li>
-          </ul>
-          <div class="p-news__button">
-            <a class="c-button" href="page-news.html">more</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- gallery -->
-    <section id="gallery" class="p-gallery l-gallery">
-      <div class="p-gallery__inner l-inner">
-        <div class="p-gallery__heading c-section-heading c-section-heading--gallery">
-          <p class="c-section-heading__sub">design&nbsp;room&nbsp;gallery</p>
-          <h3 class="c-section-heading__title">デザインルームギャラリー</h3>
-        </div>
-        <div class="p-gallery__body">
-          <div class="p-gallery__swiper swiper js-gallery-swiper">
-            <div class="p-gallery__swiper-wrapper swiper-wrapper">
-              <div class="p-gallery__swiper-slide swiper-slide">
-                <img src="./assets/images/common/gallery-01.jpg" alt="">
-              </div>
-              <div class="p-gallery__swiper-slide swiper-slide">
-                <img src="./assets/images/common/gallery-02.jpg" alt="">
-              </div>
-              <div class="p-gallery__swiper-slide swiper-slide">
-                <img src="./assets/images/common/gallery-03.jpg" alt="">
-              </div>
-              <div class="p-gallery__swiper-slide swiper-slide">
-                <img src="./assets/images/common/gallery-04.jpg" alt="">
-              </div>
+    <!-- about-body -->
+    <section class="p-about-body l-about-body">
+      <div class="p-about-body__inner l-inner">
+        <ul class="p-about-body__items">
+          <li class="p-about-body__item">
+            <div class="p-about-body__content">
+              <h2 class="p-about-body__title">オーダーメイドの注文住宅専門</h2>
+              <p class="p-about-body__text">私たちはオーダーメイドの注文住宅に特化した会社です。お客様の夢や要望に合わせて、一から住まいをデザイン・建築いたします。一流の建築家とデザイナーがお客様の要望をくみ取り、独創的なアイディアと最新技術を駆使して、唯一無二の住まいを実現いたします。私たちはお客様のライフスタイルや好みを細部まで反映した家づくりを追求し、あなたの人生に寄り添う家をお届けします。</p>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- recruit -->
-    <section id="recruit" class="p-recruit l-recruit">
-      <div class="p-recruit__inner l-inner">
-        <div class="p-recruit__body">
-          <div class="p-recruit__img">
-            <img src="./assets/images/common/recruit-01.jpg" alt="">
-          </div>
-          <div class="p-recruit__link">
-            <a class="p-recruit__heading c-section-heading c-section-heading--recruit" href="page-recruit.html">
-              <p class="c-section-heading__sub">recruit</p>
-              <h3 class="c-section-heading__title">採用情報</h3>
-            </a>
-          </div>
-        </div>
+            <div class="p-about-body__img">
+              <img src="./assets/images/common/page-about-01.jpg" alt="オーダーメイドの住宅の外観">
+            </div>
+          </li>
+          <li class="p-about-body__item">
+            <div class="p-about-body__content">
+              <h2 class="p-about-body__title">高品質なクラフトマンシップとデザイン</h2>
+              <p class="p-about-body__text">私たちの家づくりは、厳選された素材と最高品質の工芸品を使用し、細部へのこだわりと優れた施工技術によって完成度の高い住まいを提供します。常にトレンドや最新のデザインに敏感であり、住まいの内外を彩る美しいエレメントを提案します。他にはない、高いクオリティと独自のデザイン性を兼ね備えています。</p>
+            </div>
+            <div class="p-about-body__img">
+              <img src="./assets/images/common/page-about-02.jpg" alt="オーダーメイドの住宅の外観">
+            </div>
+          </li>
+          <li class="p-about-body__item">
+            <div class="p-about-body__content">
+              <h2 class="p-about-body__title">持続可能性とエネルギー効率への取り組み</h2>
+              <p class="p-about-body__text">私たちは持続可能な住まいづくりにも力を入れています。最新の環境技術を駆使し、住まいの快適さと環境負荷の軽減を両立させます。エコフレンドリーな素材や設備を使用し、住まいが地球環境に配慮した持続可能な選択肢となるように努めています。豪華さと環境への貢献を両立させることができる、理想的な住環境を提供します。</p>
+            </div>
+            <div class="p-about-body__img">
+              <img src="./assets/images/common/page-about-03.jpg" alt="オーダーメイドの住宅の外観">
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 

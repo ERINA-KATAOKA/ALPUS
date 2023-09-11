@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="noindex" />
+  <!-- meta情報 -->
+  <title>ALPUS</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+  <!-- ファビコン -->
+  <link rel="icon" href="./assets/images/common/logo.svg" />
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="./assets/js/script.js"></script>
+</head>
+<body class="p-fade-in js-fade-in">
+  <header>
+    <div class="p-header js-header">
+      <div class="p-header__inner">
+        <div class="p-header__name">
+          <a href="index.html" class="p-header__logo">
+            <img src="./assets/images/common/logo.svg" alt="ALPUS">
+          </a>
+        </div>
+        <div class="p-header__nav-content">
+          <nav class="p-header__pc-nav">
+            <ul class="p-header__nav-items">
+              <li class="p-header__nav-item">
+                <a class="p-header__nav-link" href="index.html#about">私たちについて</a>
+              </li>
+              <li class="p-header__nav-item">
+                <a class="p-header__nav-link" href="index.html#service">サービス</a>
+              </li>
+              <li class="p-header__nav-item">
+                <a class="p-header__nav-link" href="index.html#news">ニュース</a>
+              </li>
+              <li class="p-header__nav-item">
+                <a class="p-header__nav-link" href="index.html#gallery">ギャラリー</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="p-header__buttton-content">
+            <div class="p-header__button">
+              <a class="c-button c-button--nav" href="page-recruit.html">採用情報</a>
+            </div>
+            <div class="p-header__button">
+              <a class="c-button c-button--nav" href="page-contact.html">お問い合わせ</a>
+            </div>
+          </div>
+        </div>
+        <!-- hamburger -->
+        <div class="p-header__hamburger c-hamburger js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <!-- drawer -->
+      <div class="p-header__sp-nav p-drawer js-drawer">
+        <div class="p-drawer__inner">
+          <div class="p-drawer__nav-content">
+            <nav class="p-drawer__nav">
+              <ul class="p-drawer__nav-items">
+                <li class="p-drawer__nav-item">
+                  <a href="index.html#about" class="p-drawer__nav-link">私たちについて</a>
+                </li>
+                <li class="p-drawer__nav-item">
+                  <a href="index.html#service" class="p-drawer__nav-link">サービス</a>
+                </li>
+                <li class="p-drawer__nav-item">
+                  <a href="index.html#news" class="p-drawer__nav-link">ニュース</a>
+                </li>
+                <li class="p-drawer__nav-item">
+                  <a href="index.html#gallery" class="p-drawer__nav-link">ギャラリー</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="p-drawer__buttton">
+              <ul class="p-drawer__button-items">
+                <li class="p-drawer__button-item">
+                  <a class="c-button c-button--drawer" href="page-recruit.html">採用情報</a>
+                </li>
+                <li class="p-drawer__button-item">
+                  <a class="c-button c-button--drawer" href="page-contact.html">お問い合わせ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- ページタイトル -->
+    <div class="c-page-mv">
+      <div class="c-page-mv__inner">
+        <picture class="c-page-mv__img">
+          <source srcset="./assets/images/common/page-mv-sp-contact.jpg" media="(max-width: 767px)"/>
+          <img src="./assets/images/common/page-mv-contact.jpg" alt=""/>
+        </picture>
+        <div class="c-page-mv__title-wrap">
+          <p class="c-page-mv__sub">contact</p>
+          <h1 class="c-page-mv__main">お問い合わせ</h1>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="c-page-top c-page-top--fixed js-page-top">
+      <div class="c-page-top__wrap">
+        <a href="#" class="c-page-top__link">
+          <span>page&nbsp;top</span>
+        </a>
+      </div>
+    </div>
+    <div class="p-footer l-footer">
+      <div class="p-footer__inner l-inner">
+        <div class="p-footer__content">
+          <div class="p-footer__wrapper-top">
+            <div class="p-footer__nav">
+              <ul class="p-footer__nav-items">
+                <li class="p-footer__nav-item">
+                  <a class="p-footer__link" href="index.html#about">私たちについて</a>
+                </li>
+                <li class="p-footer__nav-item">
+                  <a class="p-footer__link" href="index.html#service">サービス</a>
+                </li>
+                <li class="p-footer__nav-item">
+                  <a class="p-footer__link" href="index.html#news">ニュース</a>
+                </li>
+                <li class="p-footer__nav-item">
+                  <a class="p-footer__link" href="index.html#gallery">ギャラリー</a>
+                </li>
+              </ul>
+            </div>
+            <div class="p-footer__button">
+              <ul class="p-footer__button-items">
+                <li class="p-footer__button-item">
+                  <a class="c-button c-button--nav" href="page-recruit.html">採用情報</a>
+                </li>
+                <li class="p-footer__button-item">
+                  <a class="c-button c-button--nav" href="page-contact.html">お問い合わせ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-footer__wrapper-bottom">
+            <div class="p-footer__name">
+              <div class="p-footer__title">
+                <p>aplus</p>
+              </div>
+              <a class="p-footer__logo" href="index.html">
+                <img class="p-footer__logo-img" src="./assets/images/common/logo.svg" alt="APLUS">
+              </a>
+            </div>
+            <div class="p-footer__add">
+              <ul class="p-footer__add-list">
+                <li class="p-footer__add-item">
+                  <p>株式会社APLUS</p>
+                </li>
+                <li class="p-footer__add-item">
+                  <p>〒105-0004</p>
+                </li>
+                <li class="p-footer__add-item">
+                  <p>東京都千代田区神田</p>
+                </li>
+                <li class="p-footer__add-item">
+                  <p>9:00AM—6:00PM （水曜日定休）</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-footer__page-top c-page-top u-desktop">
+            <div class="c-page-top__wrap">
+              <a href="#" class="c-page-top__link">
+                <span>page&nbsp;top</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-footer__copyright">
+        <p>Copyright&thinsp;&copy;&thinsp;A&thinsp;PLUS&thinsp;All&thinsp;Rights&thinsp;Reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

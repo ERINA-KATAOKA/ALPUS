@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.p-about-discription__inner.l-inner {
+  max-width: rem(639);
+}
+
+.p-about-discription__title {
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: calc(32 / 16);
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+.p-about-discription__text {
+  margin-top: rem(32);
+  font-size: rem(14);
+  font-weight: $normal;
+  line-height: calc(32 / 14);
+  letter-spacing: 0.08em;
+  text-align: center;
+
+  @include mq("md") {
+		margin-top: rem(48);
+  }
+}
+
+.p-about-discription__text p:not(:first-child) {
+  margin-top: rem(32);
+}

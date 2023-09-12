@@ -1,0 +1,69 @@
+@use "global" as *;
+
+.p-recruit-flow__inner.l-inner {
+  max-width: rem(600);
+  padding: 0 rem(40);
+
+  @include mq("md") {
+		max-width: rem(866);
+    padding: 0 rem(25);
+  }
+}
+
+.p-recruit-flow__heading {
+  text-align: center;
+}
+
+.p-recruit-flow__content {
+  margin-top: rem(48);
+
+  @include mq("md") {
+		margin-top: rem(96);
+  }
+}
+
+.p-recruit-flow__items {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(32);
+}
+
+.p-recruit-flow__text {
+  position: relative;
+  margin-top: rem(40);
+  padding-top: rem(88);
+  text-align: center;
+
+  @include mq("md") {
+		margin-top: rem(24);
+  }
+}
+
+.p-recruit-flow__text::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: rem(1);
+  height: rem(64);
+  background-color: $white;
+}
+
+.p-recruit-flow__text p {
+  font-size: rem(18);
+  font-weight: $bold;
+  line-height: calc(24 / 18);
+  letter-spacing: 0.08em;
+}
+
+.p-recruit-flow__entry {
+  margin-top: rem(64);
+  padding: 0 rem(20);
+  text-align: center;
+
+  @include mq("md") {
+    margin-top: rem(104);
+		padding: 0;
+  }
+}

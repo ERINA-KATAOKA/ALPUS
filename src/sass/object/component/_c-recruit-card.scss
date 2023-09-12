@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.c-recruit-card {
+  padding: rem(32) rem(16);
+  border: rem(1) solid $white;
+}
+
+.c-recruit-card__title {
+  text-align: center;
+}
+
+.c-recruit-card__title h3 {
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.08em;
+}
+
+.c-recruit-card__img {
+  margin-top: rem(30);
+}
+
+.c-recruit-card__img img {
+  aspect-ratio: 264 /160;
+  object-fit: cover;
+}
+
+.c-recruit-card__text {
+  margin-top: rem(24);
+}
+
+.c-recruit-card__text p {
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.08em;
+  text-align: justify;
+}

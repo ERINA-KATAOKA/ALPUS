@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.c-news-card {
+  width: 100%;
+  padding: rem(24) rem(18) rem(97);
+  border: rem(1) solid $white;
+  background-color: $gray03;
+  cursor: pointer;
+  // transition: box-shadow .3s, transform .3s;
+  transition: background-color .3s ease, color .3s ease;
+}
+
+.c-news-card:hover {
+  // box-shadow: rem(4) rem(4) rem(4) rgba($color: $white, $alpha: 0.5);
+  // transform: translateY(rem(-4));
+  background-color: $white;
+  color: $gray03;
+}
+
+.c-news-card__date time {
+  font-size: rem(13);
+  font-weight: $normal;
+  line-height: calc(13 / 13);
+  letter-spacing: 0.08em;
+}
+
+.c-news-card__title {
+  max-width: rem(154);
+  margin-top: rem(45);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c-news-card__title h2 {
+  font-size: rem(16);
+  font-weight: $normal;
+  letter-spacing: 0.08em;
+}

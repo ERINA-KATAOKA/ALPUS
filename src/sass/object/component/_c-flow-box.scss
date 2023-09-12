@@ -1,0 +1,84 @@
+@use "global" as *;
+
+.c-flow-box {
+  display: grid;
+  grid-template-columns: rem(48) 1fr;
+  grid-template-rows: rem(48) 1fr;
+  border: rem(1) solid $white;
+
+  @include mq("md") {
+		grid-template-columns: rem(120) 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+.c-flow-box__number {
+  display: grid;
+  place-content: center;
+  background-color: $white;
+}
+
+.c-flow-box__number p {
+  display: inline-block;
+  font-size: rem(24);
+  font-weight: $bold;
+  line-height: calc(24 / 24);
+  letter-spacing: 0.08em;
+  color: $gray02;
+
+  @include mq("md") {
+		font-size: rem(32);
+  }
+}
+
+.c-flow-box__body {
+  display: contents;
+
+  @include mq("md") {
+		display: block;
+    padding: rem(33) rem(28) rem(28) rem(48);
+  }
+}
+
+.c-flow-box__title {
+  padding-left: rem(32);
+  display: grid;
+  align-items: center;
+
+  @include mq("md") {
+		padding: 0;
+  }
+}
+
+.c-flow-box__title h3 {
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.08em;
+
+  @include mq("md") {
+		font-size: rem(18);
+  }
+}
+
+.c-flow-box__text {
+  padding: rem(16) rem(12) rem(24) rem(24);
+  grid-column: span 2;
+
+  @include mq("md") {
+    margin-top: rem(8);
+		padding: 0;
+  }
+}
+
+.c-flow-box__text p {
+  font-size: rem(14);
+  font-weight: $bold;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.08em;
+  
+  @include mq("md") {
+    font-size: rem(16);
+    line-height: calc(24 / 16);
+  }
+}

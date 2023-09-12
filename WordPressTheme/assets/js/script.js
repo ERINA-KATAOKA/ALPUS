@@ -52,6 +52,35 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+/* --------------------------------------------
+ *  モーダル
+ * -------------------------------------------- */
+document.addEventListener("DOMContentLoaded", function () {
+  var open = document.querySelectorAll(".js-modal-open");
+  var close = document.querySelectorAll(".js-modal-close");
+  var modal = document.querySelector(".js-modal");
+
+  // 開くボタンをクリックしたら
+  open.forEach(function (button) {
+    button.addEventListener("click", function () {
+      modal.classList.add("is-open");
+      // 背景を固定してスクロールさせない
+      document.documentElement.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  // 閉じるボタンまたはモーダルをクリックしたらモーダルを閉じる
+  close.forEach(function (button) {
+    button.addEventListener("click", function () {
+      modal.classList.remove("is-open");
+      // 背景の固定を解除する
+      document.documentElement.style.overflow = "auto";
+      document.body.style.overflow = "auto";
+    });
+  });
+});
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
   // ハンバーガーメニュー
@@ -123,4 +152,25 @@ jQuery(function ($) {
       });
     });
   });
+
+  // モーダル
+  // $(function() {
+  //   const open = $(".js-modal-open"),
+  //     close = $(".js-modal-close"),
+  //     modal = $(".js-modal");
+
+  //   //開くボタンをクリックしたら
+  //   open.on("click", function () {
+  //     modal.addClass("is-open");
+  //     // 背景を固定してスクロールさせない
+  //     $('html, body').css('overflow', 'hidden');
+  //   });
+
+  //   //閉じるボタンをクリックしたらモーダルを閉じる
+  //   close.add(modal).on("click", function () {
+  //     modal.removeClass("is-open");
+  //     // 背景の固定を解除する
+  //     $('html, body').removeAttr('style');
+  //   });
+  // });
 });

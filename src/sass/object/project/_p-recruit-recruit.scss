@@ -1,0 +1,34 @@
+@use "global" as *;
+
+.p-recruit-recruit__inner.l-inner {
+  max-width: rem(600);
+  padding: 0 rem(40);
+
+  @include mq("md") {
+    max-width: rem(1020);
+		padding: 0 rem(25);
+  }
+}
+
+.p-recruit-recruit__heading {
+  text-align: center;
+}
+
+.p-recruit-recruit__content {
+  margin-top: rem(32);
+
+  @include mq("md") {
+		margin-top: rem(72);
+  }
+}
+
+.p-recruit-recruit__items {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(32);
+
+  @include mq("md") {
+		grid-template-columns: repeat(3, 1fr);
+    gap: rem(40);
+  }
+}

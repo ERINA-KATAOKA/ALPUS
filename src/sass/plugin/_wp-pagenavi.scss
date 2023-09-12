@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.wp-pagenavi {
+  display: flex;
+  justify-content: center;
+  gap: rem(16);
+}
+
+.wp-pagenavi a,
+.wp-pagenavi span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: rem(40);
+  height: rem(40);
+  border: rem(1) solid $white;
+  font-size: rem(13);
+  font-weight: $normal;
+  line-height: calc(13 / 13);
+  letter-spacing: 0.08em;
+  transition: background-color .3s ease, color .3s ease;
+}
+
+.wp-pagenavi a:hover,
+.wp-pagenavi span.current {
+  background-color: $white;
+  color: $gray02;
+}

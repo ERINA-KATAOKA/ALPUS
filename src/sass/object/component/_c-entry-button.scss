@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.c-entry-button {
+  display: inline-block;
+  width: 100%;
+  padding: rem(60) 0;
+  font-size: rem(18);
+  font-weight: $bold;
+  line-height: calc(24 / 18);
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+  color: $gray03;
+  background-color: $white;
+  box-shadow: 0 rem(4) rem(4) rgba($color: $white, $alpha: 0.56);
+  transition: box-shadow .3s ease, transform .3s ease;
+}
+
+.c-entry-button:hover {
+  transform: translateY(rem(4));
+  box-shadow: none;
+}

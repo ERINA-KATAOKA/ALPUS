@@ -12,11 +12,13 @@
   text-align: center;
   border: rem(1) solid $white;
   box-shadow: 0 rem(4) rem(4) rgba($color: $white, $alpha: 0.56);
-  transition: box-shadow .1s, transform .1s ease-in;
+  transition: box-shadow .1s ease, transform .1s ease-in,background-color .3s ease, color .3s ease;
 }
 
 @media(hover: hover) {
   .c-button:hover {
+    background-color: $white;
+    color: $gray03;
     box-shadow: none;
     transform: translateY(rem(4));
   }

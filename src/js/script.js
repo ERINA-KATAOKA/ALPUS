@@ -51,12 +51,43 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+/* --------------------------------------------
+ *  モーダル
+ * -------------------------------------------- */
+document.addEventListener("DOMContentLoaded", function () {
+  const open = document.querySelectorAll(".js-modal-open");
+  const close = document.querySelectorAll(".js-modal-close");
+  const modal = document.querySelector(".js-modal");
+
+  // 開くボタンをクリックしたら
+  open.forEach(function (button) {
+    button.addEventListener("click", function () {
+      modal.classList.add("is-open");
+      // 背景を固定してスクロールさせない
+      document.documentElement.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  // 閉じるボタンまたはモーダルをクリックしたらモーダルを閉じる
+  close.forEach(function (button) {
+    button.addEventListener("click", function () {
+      modal.classList.remove("is-open");
+      // 背景の固定を解除する
+      document.documentElement.style.overflow = "auto";
+      document.body.style.overflow = "auto";
+    });
+  });
+});
+
+
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 // ハンバーガーメニュー
 $(".js-hamburger,.js-drawer").click(function () {
   $(".js-hamburger").toggleClass("is-active");
   $(".js-drawer").fadeToggle();
 });
+
 
 $(document).ready(function () {
   // ヘッダーの高さ取得
@@ -116,5 +147,27 @@ $(function() {
     });
   });
 });
+
+// モーダル
+// $(function() {
+//   const open = $(".js-modal-open"),
+//     close = $(".js-modal-close"),
+//     modal = $(".js-modal");
+
+//   //開くボタンをクリックしたら
+//   open.on("click", function () {
+//     modal.addClass("is-open");
+//     // 背景を固定してスクロールさせない
+//     $('html, body').css('overflow', 'hidden');
+//   });
+
+//   //閉じるボタンをクリックしたらモーダルを閉じる
+//   close.add(modal).on("click", function () {
+//     modal.removeClass("is-open");
+//     // 背景の固定を解除する
+//     $('html, body').removeAttr('style');
+//   });
+// });
+
 
 });

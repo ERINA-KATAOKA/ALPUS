@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.l-news-body {
+  margin-top: rem(64);
+
+  @include mq("md") {
+		margin-top: rem(104);
+  }
+}

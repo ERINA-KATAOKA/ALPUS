@@ -4,3 +4,17 @@
 .swiper-wrapper {
   transition-timing-function: linear;
 }
+
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+.swiper-slide-active .p-mv__swiper-img img,
+.swiper-slide-duplicate-active .p-mv__swiper-img img,
+.swiper-slide-prev .p-mv__swiper-img img {
+  animation: zoomUp 12s linear 0s normal both;
+}

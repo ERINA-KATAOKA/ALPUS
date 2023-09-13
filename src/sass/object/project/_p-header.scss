@@ -36,10 +36,15 @@
 .p-header__name {
   max-width: rem(48);
   width: 100%;
+  transition: .3s ease;
 
   @include mq("md") {
 		max-width: rem(80);
   }
+}
+
+.p-header__name:hover {
+  transform: scale(1.2);
 }
 
 .p-header__nav-content {
@@ -79,6 +84,11 @@
   line-height: calc(24 / 16);
   letter-spacing: 0.08em;
   align-items: center;
+  transition: transform .3s ease;
+}
+
+.p-header__nav-link:hover {
+  transform: translateY(rem(4));
 }
 
 .p-header__buttton-content {

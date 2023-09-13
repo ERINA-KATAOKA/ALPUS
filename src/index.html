@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
   <!-- ファビコン -->
-  <link rel="icon" href="./assets/images/common/logo.svg" />
+  <link rel="icon" href="./assets/images/common/logo.png" />
   <!-- css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="./assets/css/style.css" />
@@ -33,12 +33,26 @@
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body class="p-fade-in js-fade-in">
+  <!-- ローディング -->
+  <div class="p-loading js-loading">
+    <div class="p-loading__content">
+      <div class="p-loading__mask">
+        <span class="p-loading__mask-stripe"></span>
+        <span class="p-loading__mask-stripe"></span>
+        <span class="p-loading__mask-stripe"></span>
+        <span class="p-loading__mask-stripe"></span>
+        <span class="p-loading__mask-stripe"></span>
+        <span class="p-loading__mask-stripe"></span>
+      </div>
+      <img class="p-loading__logo" src="./assets/images/common/logo.svg" alt="APLUS">
+    </div>
+  </div>
   <header>
     <div class="p-header js-header">
       <div class="p-header__inner">
         <h1 class="p-header__name">
           <a href="#" class="p-header__logo">
-            <img src="./assets/images/common/logo.svg" alt="ALPUS">
+            <img src="./assets/images/common/logo.png" alt="ALPUS">
           </a>
         </h1>
         <div class="p-header__nav-content">
@@ -77,32 +91,34 @@
       <!-- drawer -->
       <div class="p-header__sp-nav p-drawer js-drawer">
         <div class="p-drawer__inner">
-          <div class="p-drawer__nav-content">
-            <nav class="p-drawer__nav">
-              <ul class="p-drawer__nav-items">
-                <li class="p-drawer__nav-item">
-                  <a href="#about" class="p-drawer__nav-link">私たちについて</a>
-                </li>
-                <li class="p-drawer__nav-item">
-                  <a href="#service" class="p-drawer__nav-link">サービス</a>
-                </li>
-                <li class="p-drawer__nav-item">
-                  <a href="#news" class="p-drawer__nav-link">ニュース</a>
-                </li>
-                <li class="p-drawer__nav-item">
-                  <a href="#gallery" class="p-drawer__nav-link">ギャラリー</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="p-drawer__buttton">
-              <ul class="p-drawer__button-items">
-                <li class="p-drawer__button-item">
-                  <a class="c-button c-button--drawer" href="page-recruit.html">採用情報</a>
-                </li>
-                <li class="p-drawer__button-item">
-                  <a class="c-button c-button--drawer" href="page-contact.html">お問い合わせ</a>
-                </li>
-              </ul>
+          <div class="p-drawer__wrapper">
+            <div class="p-drawer__nav-content">
+              <nav class="p-drawer__nav">
+                <ul class="p-drawer__nav-items">
+                  <li class="p-drawer__nav-item">
+                    <a href="#about" class="p-drawer__nav-link">私たちについて</a>
+                  </li>
+                  <li class="p-drawer__nav-item">
+                    <a href="#service" class="p-drawer__nav-link">サービス</a>
+                  </li>
+                  <li class="p-drawer__nav-item">
+                    <a href="#news" class="p-drawer__nav-link">ニュース</a>
+                  </li>
+                  <li class="p-drawer__nav-item">
+                    <a href="#gallery" class="p-drawer__nav-link">ギャラリー</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="p-drawer__buttton">
+                <ul class="p-drawer__button-items">
+                  <li class="p-drawer__button-item">
+                    <a class="c-button c-button--drawer" href="page-recruit.html">採用情報</a>
+                  </li>
+                  <li class="p-drawer__button-item">
+                    <a class="c-button c-button--drawer" href="page-contact.html">お問い合わせ</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -116,7 +132,7 @@
         <div class="p-mv__swiper swiper js-mv-swiper">
           <div class="p-mv__swiper-wrapper swiper-wrapper">
             <div class="p-mv__swiper-slide swiper-slide">
-              <div class="p-mv__swiper-img">
+              <div class="p-mv__swiper-img js-loading-img">
                 <img src="./assets/images/common/mv-01.jpg" alt="ハイクオリティなリビングの様子"/>
               </div>
             </div>
@@ -132,7 +148,7 @@
             </div>
           </div>
         </div>
-        <div class="p-mv__title-wrapper">
+        <div class="p-mv__title-wrapper js-loading-text">
           <h2 class="p-mv__title">ハイクオリティの空間を<br>あなたに</h2>
         </div>
       </div>
@@ -349,7 +365,7 @@
                 <p>aplus</p>
               </div>
               <a class="p-footer__logo" href="index.html">
-                <img class="p-footer__logo-img" src="./assets/images/common/logo.svg" alt="APLUS">
+                <img class="p-footer__logo-img" src="./assets/images/common/logo.png" alt="APLUS">
               </a>
             </div>
             <div class="p-footer__add">

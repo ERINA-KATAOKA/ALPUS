@@ -1,0 +1,64 @@
+@use "global" as *;
+
+.p-form__item {
+
+  @include mq("md") {
+		display: flex;
+    // align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.p-form__item:not(:first-child) {
+  margin-top: rem(16);
+
+  @include mq("md") {
+		margin-top: rem(24);
+  }
+}
+
+.p-form__item dt {
+  font-size: rem(14);
+  font-weight: $bold;
+  line-height: calc(22 / 14);
+  
+  @include mq("md") {
+    margin-top: rem(8);
+    font-size: rem(16);
+    line-height: calc(26 / 16);
+  }
+}
+
+.p-form__item dt span {
+  display: inline-block;
+  margin-left: rem(16);
+  padding: rem(5) rem(11);
+  font-size: rem(12);
+  font-weight: $bold;
+  line-height: calc(12 / 12);
+  border: rem(1) solid $white;
+  border-radius: rem(2);
+  
+  @include mq("md") {
+    font-size: rem(14);
+    padding: rem(7) rem(10);
+  }
+}
+
+.p-form__item dd {
+  margin-top: rem(12);
+  
+  @include mq("md") {
+    margin-top: 0;
+		width: 56.0403%;
+  }
+}
+
+.p-form__button {
+  margin-top: rem(72);
+  text-align: center;
+
+  @include mq("md") {
+		margin-top: rem(98);
+  }
+}

@@ -14,6 +14,8 @@
   @include mq("md") {
 		transform: scale(1.5);
     transform-origin: top right;
+    top: rem(40);
+    right: rem(18);
   }
 
   @include mq("lg") {

@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.p-contact-body__inner.l-inner {
+  max-width: rem(646);
+}
+
+.p-contact-body__text {
+  text-align: center;
+}
+
+.p-contact-body__text p {
+  font-size: rem(18);
+  font-weight: $bold;
+  line-height: calc(29 / 18);
+  letter-spacing: 0.08em;
+}
+
+.p-contact-body__form {
+  margin-top: rem(64);
+
+  @include mq("md") {
+		margin-top: rem(80);
+  }
+}

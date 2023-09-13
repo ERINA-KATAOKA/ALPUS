@@ -12,18 +12,25 @@
   overflow-y: auto;
 }
 
+
 .p-drawer__inner {
+  width: 100%;
+  height: inherit;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  padding: rem(32) 0;
+}
+
+.p-drawer__wrapper {
+  margin: auto;
 }
 
 .p-drawer__nav-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 100%;
-  padding: rem(32) 0 rem(64) 0;
+  padding-bottom: rem(32);
 }
 
 .p-drawer__nav-items {

@@ -839,14 +839,11 @@ a {
 	width: 100%;
 }
 
-.p-drawer__wrapper {
-	margin: auto;
-}
-
 .p-drawer__nav-content {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+	margin: auto;
 	padding-bottom: 2rem;
 	width: 100%;
 }
